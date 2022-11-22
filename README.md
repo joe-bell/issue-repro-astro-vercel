@@ -20,8 +20,9 @@ All commands are run from the root of the project, from a terminal:
 
 There are a few things to highlight:
 
-1. Vercel's TypeScript version is hard-coded and doesn't support my project's newer version.
-2. `@vercel/og` fails for non-`.tsx` files (and can't seem to find built-in assets)
+1. These issues only occur locally, not on Vercel.
+1. `vercel`'s TypeScript version is hard-coded and doesn't support my project's newer version.
+1. `@vercel/og` fails for non-`.tsx` files (and can't seem to find built-in assets)
 
 When running `pnpm vercel dev` the following error is displayed:
 
