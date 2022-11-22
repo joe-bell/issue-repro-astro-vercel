@@ -18,7 +18,12 @@ All commands are run from the root of the project, from a terminal:
 
 ## Issues
 
-When running `pnpm vercel dev` (or within Vercel's build logs), the following message is displayed:
+There are a few things to highlight:
+
+1. Vercel's TypeScript version is hard-coded and doesn't support my project's newer version.
+2. `@vercel/og` fails for non-`.tsx` files (and can't seem to find built-in assets)
+
+When running `pnpm vercel dev` the following error is displayed:
 
 ```sh
 > @example/minimal@0.0.1 dev /Users/joe/www/issue-repro-astro-vercel
@@ -41,8 +46,3 @@ node_modules/.pnpm/astro@1.6.10_@types+node@18.11.9/node_modules/astro/tsconfigs
 
 Found 1 error.
 ```
-
-There are a few things to consider here:
-
-1. Vercel's TypeScript version is hard-coded and doesn't support my project's newer version.
-2. `@vercel/og` fails for non-`.tsx` files (and can't seem to find built-in assets)
