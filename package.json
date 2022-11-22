@@ -1,0 +1,19 @@
+{
+  "name": "@example/minimal",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/vercel": "^2.3.4",
+    "@vercel/og": "^0.0.21",
+    "astro": "^1.6.10",
+    "vercel": "28.5.6"
+  }
+}
